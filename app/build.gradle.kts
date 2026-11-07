@@ -24,7 +24,7 @@ val releaseStoreFile = signingValue("storeFile", "ABONE_KEYSTORE_PATH")
 
 android {
     namespace = "com.aboneliktakip.app"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.aboneliktakip.app"
