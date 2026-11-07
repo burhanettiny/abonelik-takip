@@ -61,6 +61,7 @@ import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
+import androidx.core.net.toUri
 import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.aboneliktakip.app.BuildConfig
@@ -208,7 +209,7 @@ fun SettingsScreen(vm: SettingsViewModel, onNavigate: (TopLevel) -> Unit) {
                 icon = Icons.Outlined.PrivacyTip,
                 title = stringResource(R.string.settings_privacy),
                 subtitle = stringResource(R.string.settings_privacy_help),
-                onClick = { context.safeStart(Intent(Intent.ACTION_VIEW, Uri.parse(PRIVACY_POLICY_URL))) },
+                onClick = { context.safeStart(Intent(Intent.ACTION_VIEW, PRIVACY_POLICY_URL.toUri())) },
             )
             Item(
                 icon = Icons.Outlined.Info,
@@ -254,13 +255,13 @@ fun SettingsScreen(vm: SettingsViewModel, onNavigate: (TopLevel) -> Unit) {
                 text = { Text(stringResource(R.string.import_message)) },
                 confirmButton = {
                     TextButton(onClick = {
-                        pendingImport?.let { vm.import(Uri.parse(it), replace = false) }
+                        pendingImport?.let { vm.import(it.toUri(), replace = false) }
                         dialog = null
                     }) { Text(stringResource(R.string.import_merge)) }
                 },
                 dismissButton = {
                     TextButton(onClick = {
-                        pendingImport?.let { vm.import(Uri.parse(it), replace = true) }
+                        pendingImport?.let { vm.import(it.toUri(), replace = true) }
                         dialog = null
                     }) { Text(stringResource(R.string.import_replace)) }
                 },
@@ -385,9 +386,9 @@ private fun openStore(context: Context) {
     val pkg = context.packageName.removeSuffix(".debug")
     try {
         context.startActivity(
-            Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$pkg")).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
+            Intent(Intent.ACTION_VIEW, "market://details?id=$pkg".toUri()).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
         )
     } catch (e: ActivityNotFoundException) {
-        context.safeStart(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$pkg")))
+        context.safeStart(Intent(Intent.ACTION_VIEW, "https://play.google.com/store/apps/details?id=$pkg".toUri()))
     }
 }

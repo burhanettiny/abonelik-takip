@@ -1,6 +1,7 @@
 package com.aboneliktakip.app.notify
 
 import android.content.Context
+import androidx.core.content.edit
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.aboneliktakip.app.R
@@ -43,7 +44,7 @@ class ReminderWorker(context: Context, params: WorkerParameters) : CoroutineWork
         // Geçmiş ödemelere ait kayıtları temizle.
         val todayEpoch = today.toEpochDay()
         sent.removeAll { k -> k.substringAfter('_').toLongOrNull()?.let { it < todayEpoch } ?: true }
-        prefs.edit().putStringSet(KEY_SENT, sent).apply()
+        prefs.edit { putStringSet(KEY_SENT, sent) }
         return Result.success()
     }
 

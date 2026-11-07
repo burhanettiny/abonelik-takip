@@ -16,6 +16,7 @@ import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.platform.LocalContext
+import androidx.core.content.edit
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.lifecycleScope
 import com.aboneliktakip.app.notify.Notifications
@@ -86,7 +87,7 @@ private fun NotificationPermissionRequest() {
     LaunchedEffect(Unit) {
         val prefs = context.getSharedPreferences("app", android.content.Context.MODE_PRIVATE)
         if (!Notifications.canNotify(context) && !prefs.getBoolean(KEY_ASKED, false)) {
-            prefs.edit().putBoolean(KEY_ASKED, true).apply()
+            prefs.edit { putBoolean(KEY_ASKED, true) }
             launcher.launch(Manifest.permission.POST_NOTIFICATIONS)
         }
     }

@@ -1,7 +1,6 @@
 package com.aboneliktakip.app.ui.home
 
 import android.content.Intent
-import android.os.Build
 import android.provider.Settings
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -130,13 +129,11 @@ fun HomeScreen(
                 if (notificationsBlocked) {
                     item(key = "notif") {
                         NotificationBanner(onFix = {
-                            val intent = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                            context.startActivity(
                                 Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
                                     .putExtra(Settings.EXTRA_APP_PACKAGE, context.packageName)
-                            } else {
-                                Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
-                            }
-                            context.startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+                                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK),
+                            )
                         })
                     }
                 }

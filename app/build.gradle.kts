@@ -85,6 +85,8 @@ android {
         textReport = true
         // Yeni kütüphane sürümü uyarıları derlemeyi kırmasın.
         disable += listOf("GradleDependency", "NewerVersionAvailable", "AndroidGradlePluginVersion")
+        // targetSdk 36 bilinçli seçim: Google Play'in güncel şartını karşılar; 37 yeni davranış değişiklikleri getirir.
+        disable += "OldTargetApi"
     }
 
     testOptions {
