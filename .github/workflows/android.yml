@@ -36,7 +36,7 @@ jobs:
 
       - name: Lint raporu
         if: always()
-        run: cat app/build/reports/lint-results-release.txt 2>/dev/null || true
+        run: find app/build/reports -name 'lint-results-release.txt' -exec cat {} \; 2>/dev/null || true
 
       - name: Debug APK ve release AAB
         run: ./gradlew --no-daemon assembleDebug bundleRelease
