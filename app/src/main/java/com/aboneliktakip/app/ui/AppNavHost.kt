@@ -62,10 +62,13 @@ fun AppNavHost(pendingRoute: String?, onRouteConsumed: () -> Unit) {
             arguments = listOf(navArgument(EditViewModel.ARG_ID) { type = NavType.LongType; defaultValue = 0L }),
             enterTransition = { slideInHorizontally { it / 4 } + fadeIn() },
             popExitTransition = { slideOutHorizontally { it / 4 } + fadeOut() },
-        ) {
+        ) { entry ->
             EditScreen(
                 vm = viewModel(factory = AppViewModels.Factory),
-                onClose = { nav.popBackStack() },
+                // Yalnızca bu ekran hâlâ en üstteyse kapat (çift kapatmayı önler).
+                onClose = {
+                    if (nav.currentBackStackEntry?.id == entry.id) nav.popBackStack()
+                },
             )
         }
     }

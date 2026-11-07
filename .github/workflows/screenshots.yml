@@ -1,4 +1,4 @@
-name: Store screenshots
+name: Store screenshots + release smoke test
 
 # Emülatörde örnek verilerle Play Store ekran görüntülerini (TR + EN, açık + koyu) üretir.
 # Actions sekmesinden elle çalıştırılır; görüntüler fastlane/metadata altına kopyalanıp depoya commit'lenir
@@ -23,8 +23,13 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v6
 
-      - name: Debug APK
-        run: ./gradlew --no-daemon assembleDebug
+      - name: Debug APK ve (debug anahtarıyla imzalı) release APK
+        run: |
+          ./gradlew --no-daemon assembleDebug
+          # Yalnızca duman testi için: release'i Android debug anahtarıyla imzala.
+          ABONE_KEYSTORE_PATH="$HOME/.android/debug.keystore" ABONE_KEYSTORE_PASSWORD=android \
+          ABONE_KEY_ALIAS=androiddebugkey ABONE_KEY_PASSWORD=android \
+            ./gradlew --no-daemon assembleRelease
 
       - name: KVM
         run: |
@@ -41,7 +46,9 @@ jobs:
           profile: pixel_7
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
-          script: bash scripts/take-screenshots.sh
+          script: |
+            bash scripts/smoke-test-release.sh
+            bash scripts/take-screenshots.sh
 
       - uses: actions/upload-artifact@v7
         with:

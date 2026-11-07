@@ -69,6 +69,9 @@ class EditViewModel(
     var showErrors by mutableStateOf(false)
         private set
 
+    /** Çift dokunuşla iki kez kaydetmeyi/silmeyi önler. */
+    private var busy = false
+
     private var original: EditForm = EditForm()
     private var existing: Subscription? = null
 
@@ -98,8 +101,9 @@ class EditViewModel(
         form = transform(form)
     }
 
-    /** Geçerliyse kaydeder ve true döner; değilse hataları gösterir. */
+    /** Geçerliyse kaydedip [onSaved]'i çağırır; değilse hataları gösterir. */
     fun save(onSaved: () -> Unit) {
+        if (busy) return
         val f = form
         val amount = f.amountMinor
         if (f.name.isBlank() || amount == null) {
@@ -120,6 +124,7 @@ class EditViewModel(
             active = f.active,
             createdAt = base?.createdAt ?: System.currentTimeMillis(),
         )
+        busy = true
         viewModelScope.launch {
             dao.upsert(sub)
             ReminderScheduler.checkNow(appContext)
@@ -129,6 +134,8 @@ class EditViewModel(
 
     fun delete(onDeleted: () -> Unit) {
         val s = existing ?: return
+        if (busy) return
+        busy = true
         viewModelScope.launch {
             dao.delete(s)
             onDeleted()
