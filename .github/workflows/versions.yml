@@ -1,0 +1,11 @@
+name: versions
+on: push
+jobs:
+  v:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for a in com/android/tools/build/gradle androidx/compose/compose-bom androidx/room/room-runtime androidx/work/work-runtime-ktx androidx/activity/activity-compose androidx/lifecycle/lifecycle-runtime-compose androidx/core/core-ktx androidx/navigation/navigation-compose androidx/datastore/datastore-preferences androidx/glance/glance-appwidget com/android/tools/lint/lint-api androidx/test/ext/junit androidx/test/espresso/espresso-core androidx/test/uiautomator/uiautomator androidx/compose/ui/ui-test-junit4; do
+            echo "== $a: $(curl -s https://dl.google.com/dl/android/maven2/$a/maven-metadata.xml | grep -o '<version>[^<]*' | sed 's/<version>//' | grep -viE 'alpha|beta|rc|dev' | tail -5 | tr '\n' ' ')"
+          done
+          ls $ANDROID_HOME/platforms $ANDROID_HOME/build-tools || true
