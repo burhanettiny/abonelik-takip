@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Kart -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,36h40a4,4 0,0 1,4 4v28a4,4 0,0 1,-4 4h-40a4,4 0,0 1,-4 -4v-28a4,4 0,0 1,4 -4z" />
+    <!-- Manyetik şerit -->
+    <path
+        android:fillColor="#0E3B32"
+        android:pathData="M30,43h48v7h-48z" />
+    <!-- Takvim noktası -->
+    <path
+        android:fillColor="#F2B84B"
+        android:pathData="M66,63m-5,0a5,5 0,1 0,10 0a5,5 0,1 0,-10 0" />
+    <path
+        android:fillColor="#9FC9BE"
+        android:pathData="M36,58h18v3h-18zM36,64h12v3h-12z" />
+</vector>
