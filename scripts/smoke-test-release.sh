@@ -6,6 +6,7 @@ ACT=$PKG/.MainActivity
 APK=app/build/outputs/apk/release/app-release.apk
 
 adb wait-for-device
+adb shell settings put global hide_error_dialogs 1 || true
 adb install -r -g "$APK"
 adb logcat -c
 

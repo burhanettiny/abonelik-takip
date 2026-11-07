@@ -9,6 +9,10 @@ APK=app/build/outputs/apk/debug/app-debug.apk
 OUT=screenshots
 
 adb wait-for-device
+# Sistemin "uygulama yanıt vermiyor" diyalogları görüntülere düşmesin.
+adb shell settings put global hide_error_dialogs 1 || true
+adb shell am broadcast -a android.intent.action.CLOSE_SYSTEM_DIALOGS >/dev/null 2>&1 || true
+sleep 15
 adb install -r -g "$APK"
 adb shell pm grant "$PKG" android.permission.POST_NOTIFICATIONS || true
 
@@ -29,6 +33,8 @@ shot() { # locale theme route name
   adb shell cmd locale set-app-locales "$PKG" --locales "$locale"
   adb shell am start -W -n "$PKG/$ACT" --ez demo_seed true --es demo_route "$route" >/dev/null
   sleep 4
+  adb shell am broadcast -a android.intent.action.CLOSE_SYSTEM_DIALOGS >/dev/null 2>&1 || true
+  sleep 1
   mkdir -p "$OUT/$locale"
   adb exec-out screencap -p > "$OUT/$locale/$name.png"
   echo "ok $OUT/$locale/$name.png"

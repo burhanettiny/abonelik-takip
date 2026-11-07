@@ -3,6 +3,7 @@ package com.aboneliktakip.app.domain
 import com.aboneliktakip.app.data.Money
 import java.math.BigDecimal
 import java.math.RoundingMode
+import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 import java.text.NumberFormat
 import java.time.LocalDate
@@ -15,6 +16,12 @@ object Format {
     fun money(minor: Double, currency: Money, locale: Locale = Locale.getDefault()): String {
         val nf = NumberFormat.getCurrencyInstance(locale)
         nf.currency = java.util.Currency.getInstance(currency.code)
+        // Bazı dillerde (ör. en-US) TL "TRY" koduyla gösterilir; her dilde ₺ simgesini kullan.
+        if (currency == Money.TRY && nf is DecimalFormat) {
+            val symbols = nf.decimalFormatSymbols
+            symbols.currencySymbol = "₺"
+            nf.decimalFormatSymbols = symbols
+        }
         nf.minimumFractionDigits = 2
         nf.maximumFractionDigits = 2
         return nf.format(minor / 100.0)

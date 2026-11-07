@@ -57,5 +57,8 @@ class FormatTest {
         assertTrue(s, s.contains("₺") || s.contains("TL") || s.contains("TRY"))
         val d = Format.money(14999L, Money.USD, en)
         assertEquals("$149.99", d)
+        // TL her dilde ₺ simgesiyle gösterilir.
+        assertEquals("₺149.99", Format.money(14999L, Money.TRY, en))
+        assertTrue(Format.money(14999L, Money.EUR, tr).contains("€"))
     }
 }

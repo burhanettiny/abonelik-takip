@@ -47,8 +47,8 @@ jobs:
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
           script: |
-            bash scripts/smoke-test-release.sh
             bash scripts/take-screenshots.sh
+            bash scripts/smoke-test-release.sh
 
       - uses: actions/upload-artifact@v7
         with:
