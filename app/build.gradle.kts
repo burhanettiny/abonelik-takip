@@ -81,6 +81,9 @@ android {
     lint {
         abortOnError = true
         checkReleaseBuilds = true
+        // Uyarılar CI loglarında da görünsün.
+        textReport = true
+        textOutput = file("stdout")
         // Yeni kütüphane sürümü uyarıları derlemeyi kırmasın.
         disable += listOf("GradleDependency", "NewerVersionAvailable", "AndroidGradlePluginVersion")
     }
