@@ -37,6 +37,15 @@ jobs:
       - name: Debug APK ve release AAB
         run: ./gradlew --no-daemon assembleDebug bundleRelease
 
+      - name: APK izinlerini listele
+        run: |
+          AAPT2=$(ls "$ANDROID_HOME"/build-tools/*/aapt2 | sort -V | tail -1)
+          "$AAPT2" dump permissions app/build/outputs/apk/debug/app-debug.apk | tee permissions.txt
+          if grep -q "android.permission.INTERNET" permissions.txt; then
+            echo "::error::INTERNET izni bulundu; gizlilik politikası ve veri güvenliği formu güncellenmeli."
+            exit 1
+          fi
+
       - name: Çıktıları yükle
         if: always()
         uses: actions/upload-artifact@v7
