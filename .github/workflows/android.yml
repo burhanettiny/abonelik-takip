@@ -34,6 +34,10 @@ jobs:
       - name: Lint
         run: ./gradlew --no-daemon lintRelease
 
+      - name: Lint raporu
+        if: always()
+        run: cat app/build/reports/lint-results-release.txt 2>/dev/null || true
+
       - name: Debug APK ve release AAB
         run: ./gradlew --no-daemon assembleDebug bundleRelease
 
