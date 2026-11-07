@@ -1,0 +1,5 @@
+First release:
+• Track subscriptions and bills
+• Payment reminders
+• Spending insights by category
+• Backup and restore

@@ -1,0 +1,30 @@
+Dizi-film platformları, müzik, bulut depolama, telefon ve internet faturası, kira, kredi taksidi, sigorta, spor salonu… Her ay hangi ödemenin ne zaman çıkacağını takip etmek zor. Abonelik Takip, tüm düzenli ödemelerini tek ekranda toplar ve ödeme gününden önce sana hatırlatır.
+
+★ NEDEN ABONELİK TAKİP?
+• Ayda ne kadar harcadığını tek bakışta gör
+• Unuttuğun abonelikleri fark et, gereksiz olanları iptal et
+• Ödeme gününü kaçırma, gecikme faizinden ve kesintiden kurtul
+• Hesap yok, reklam yok, internet gerekmez — verilerin yalnızca telefonunda
+
+★ ÖZELLİKLER
+• Sınırsız abonelik ve fatura ekleme
+• Haftalık, aylık, 3 aylık, 6 aylık ve yıllık ödeme sıklığı
+• Sonraki ödeme tarihinin otomatik hesaplanması (ay sonu günleri doğru korunur)
+• Ödemeden aynı gün, 1, 2, 3 gün veya 1 hafta önce bildirim
+• Hatırlatma saatini kendin belirle
+• Aylık toplam, yıllık toplam ve önümüzdeki 30 günde ödenecek tutar
+• Kategoriye göre harcama dağılımı ve halka grafik
+• En pahalı aboneliklerin listesi, günlük ortalama maliyet
+• 12 hazır kategori: Dizi & Film, Müzik, Oyun, Bulut & Yazılım, Telefon & İnternet, Faturalar, Kira & Ev, Kredi & Sigorta, Sağlık & Spor, Eğitim ve daha fazlası
+• TRY, USD, EUR ve GBP para birimleri
+• Abonelikleri duraklatma (iptal etmeden toplamlardan çıkarma)
+• Not ekleme (paket, hesap, kullanılan kart vb.)
+• Ödeme tarihine, tutara veya ada göre sıralama; kategoriye göre filtreleme
+• JSON dosyasına yedekleme ve geri yükleme
+• Açık / koyu tema ve Android 12+ dinamik renk desteği
+• Türkçe ve İngilizce dil desteği
+
+★ GİZLİLİK
+Abonelik Takip hiçbir kişisel veri toplamaz. Üyelik gerektirmez, reklam ve takip aracı içermez. Girdiğin bilgiler yalnızca cihazında saklanır ve hiçbir sunucuya gönderilmez.
+
+Önerilerin ve geri bildirimlerin için uygulamayı değerlendirmeyi unutma!

@@ -57,6 +57,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
@@ -81,6 +82,7 @@ const val PRIVACY_POLICY_URL = "https://burhanettiny.github.io/abonelik-takip/pr
 fun SettingsScreen(vm: SettingsViewModel, onNavigate: (TopLevel) -> Unit) {
     val settings by vm.settings.collectAsStateWithLifecycle()
     val context = LocalContext.current
+    val resources = LocalResources.current
     val snackbar = remember { SnackbarHostState() }
 
     var dialog by rememberSaveable { mutableStateOf<String?>(null) }
@@ -95,9 +97,9 @@ fun SettingsScreen(vm: SettingsViewModel, onNavigate: (TopLevel) -> Unit) {
     LaunchedEffect(vm) {
         vm.messages.collect { msg ->
             val text = if (msg.count != null) {
-                context.resources.getQuantityString(msg.res, msg.count, msg.count)
+                resources.getQuantityString(msg.res, msg.count, msg.count)
             } else {
-                context.getString(msg.res)
+                resources.getString(msg.res)
             }
             snackbar.showSnackbar(text)
         }

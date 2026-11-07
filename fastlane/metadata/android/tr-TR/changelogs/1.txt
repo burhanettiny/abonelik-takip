@@ -1,0 +1,5 @@
+İlk sürüm:
+• Abonelik ve fatura takibi
+• Ödeme hatırlatmaları
+• Kategori bazlı analiz
+• Yedekleme ve geri yükleme

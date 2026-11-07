@@ -1,0 +1,30 @@
+Streaming services, music, cloud storage, phone and internet bills, rent, loan installments, insurance, the gym… Keeping track of which payment is due when is hard. Abonelik Takip brings all your recurring payments together on one screen and reminds you before each payment is due.
+
+★ WHY ABONELIK TAKIP?
+• See how much you spend every month at a glance
+• Spot forgotten subscriptions and cancel the ones you don't need
+• Never miss a due date, avoid late fees and service interruptions
+• No account, no ads, works offline — your data stays on your phone
+
+★ FEATURES
+• Unlimited subscriptions and bills
+• Weekly, monthly, quarterly, semi-annual and yearly billing cycles
+• Next payment date calculated automatically (end-of-month dates handled correctly)
+• Notifications on the day, or 1, 2, 3 days or 1 week before a payment
+• Choose your reminder time
+• Monthly total, yearly total and the amount due in the next 30 days
+• Spending by category with a donut chart
+• Most expensive subscriptions and your daily average cost
+• 12 built-in categories: Video & TV, Music, Games, Cloud & Software, Phone & Internet, Utilities, Rent & Home, Loans & Insurance, Health & Fitness, Education and more
+• TRY, USD, EUR and GBP currencies
+• Pause a subscription to exclude it from totals without deleting it
+• Add notes (plan, account, card used, etc.)
+• Sort by next payment, amount or name; filter by category
+• Back up to and restore from a JSON file
+• Light / dark theme and Material You dynamic colors on Android 12+
+• English and Turkish
+
+★ PRIVACY
+Abonelik Takip does not collect any personal data. No sign-up, no ads, no trackers. Everything you enter is stored only on your device and is never sent to any server.
+
+Enjoying the app? Please leave a rating — it helps a lot!
