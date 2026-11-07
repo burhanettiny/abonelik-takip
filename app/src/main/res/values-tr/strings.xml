@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sekmeler -->
+    <string name="tab_subscriptions">Abonelikler</string>
+    <string name="tab_stats">Analiz</string>
+    <string name="tab_settings">Ayarlar</string>
+
+    <!-- Ortak eylemler -->
+    <string name="action_add_subscription">Ekle</string>
+    <string name="action_back">Geri</string>
+    <string name="action_cancel">İptal</string>
+    <string name="action_close">Kapat</string>
+    <string name="action_delete">Sil</string>
+    <string name="action_discard">Vazgeç</string>
+    <string name="action_keep_editing">Düzenlemeye devam et</string>
+    <string name="action_ok">Tamam</string>
+    <string name="action_save">Kaydet</string>
+    <string name="action_turn_on">Aç</string>
+
+    <!-- Ödeme sıklıkları -->
+    <string name="cycle_weekly">Haftalık</string>
+    <string name="cycle_monthly">Aylık</string>
+    <string name="cycle_quarterly">3 ayda bir</string>
+    <string name="cycle_semiannual">6 ayda bir</string>
+    <string name="cycle_yearly">Yıllık</string>
+
+    <!-- Kategoriler -->
+    <string name="category_video">Dizi &amp; Film</string>
+    <string name="category_music">Müzik &amp; Podcast</string>
+    <string name="category_games">Oyun</string>
+    <string name="category_cloud">Bulut &amp; Yazılım</string>
+    <string name="category_news">Haber &amp; Kitap</string>
+    <string name="category_telecom">Telefon &amp; İnternet</string>
+    <string name="category_utilities">Faturalar</string>
+    <string name="category_home">Kira &amp; Ev</string>
+    <string name="category_finance">Kredi &amp; Sigorta</string>
+    <string name="category_health">Sağlık &amp; Spor</string>
+    <string name="category_education">Eğitim</string>
+    <string name="category_other">Diğer</string>
+
+    <!-- Göreli tarihler -->
+    <string name="relative_today">Bugün</string>
+    <string name="relative_tomorrow">Yarın</string>
+    <plurals name="relative_in_days">
+        <item quantity="one">%d gün sonra</item>
+        <item quantity="other">%d gün sonra</item>
+    </plurals>
+
+    <!-- Ana ekran -->
+    <string name="home_title">Aboneliklerim</string>
+    <string name="home_empty_title">Henüz abonelik yok</string>
+    <string name="home_empty_message">Dizi-film platformlarını, telefon faturanı, kiranı ve diğer düzenli ödemelerini ekle. Her ödemeden önce hatırlatalım, aylık ne kadar harcadığını görelim.</string>
+    <string name="filter_all">Tümü</string>
+    <string name="section_this_week">Önümüzdeki 7 gün</string>
+    <string name="section_this_month">Önümüzdeki 30 gün</string>
+    <string name="section_later">Daha sonra</string>
+    <string name="section_paused">Duraklatılanlar</string>
+    <string name="status_paused">Duraklatıldı</string>
+    <string name="sort">Sırala</string>
+    <string name="sort_next_payment">Ödeme tarihine göre</string>
+    <string name="sort_amount">Tutara göre</string>
+    <string name="sort_name">Ada göre</string>
+    <string name="summary_monthly">Aylık toplam</string>
+    <string name="summary_yearly">Yıllık</string>
+    <string name="summary_next_30_days">Önümüzdeki 30 gün</string>
+    <plurals name="active_subscriptions">
+        <item quantity="one">%d aktif abonelik</item>
+        <item quantity="other">%d aktif abonelik</item>
+    </plurals>
+    <string name="notifications_off_banner">Bildirimler kapalı; ödeme hatırlatmalarını alamayacaksın.</string>
+
+    <!-- Düzenleme -->
+    <string name="edit_title_new">Yeni abonelik</string>
+    <string name="edit_title_edit">Aboneliği düzenle</string>
+    <string name="field_name">Ad</string>
+    <string name="field_name_hint">Örn. Netflix</string>
+    <string name="field_amount">Tutar</string>
+    <string name="field_currency">Para birimi</string>
+    <string name="field_cycle">Ödeme sıklığı</string>
+    <string name="field_payment_date">Ödeme tarihi</string>
+    <string name="field_payment_date_help">İlk ödeme tarihini ya da geçmiş herhangi bir ödeme tarihini seç. Sonraki tarihler otomatik hesaplanır.</string>
+    <string name="field_category">Kategori</string>
+    <string name="field_reminder">Hatırlatma</string>
+    <string name="field_note">Not (isteğe bağlı)</string>
+    <string name="field_note_hint">Paket, hesap, kullanılan kart…</string>
+    <string name="field_active">Aktif</string>
+    <string name="field_active_help">Duraklatılan abonelikler toplamlara ve hatırlatmalara dahil edilmez.</string>
+    <string name="error_name_required">Lütfen bir ad gir</string>
+    <string name="error_amount_invalid">Lütfen geçerli bir tutar gir</string>
+    <string name="reminder_none">Hatırlatma yok</string>
+    <string name="reminder_same_day">Aynı gün</string>
+    <string name="reminder_1_day">1 gün önce</string>
+    <string name="reminder_2_days">2 gün önce</string>
+    <string name="reminder_3_days">3 gün önce</string>
+    <string name="reminder_1_week">1 hafta önce</string>
+    <string name="preview_title">Özet</string>
+    <string name="preview_cost">Aylık ≈ %1$s · Yıllık ≈ %2$s</string>
+    <string name="preview_next_payments">Sonraki ödemeler: %1$s</string>
+    <string name="delete_title">Abonelik silinsin mi?</string>
+    <string name="delete_message">“%1$s” kalıcı olarak silinecek.</string>
+    <string name="discard_title">Değişiklikler silinsin mi?</string>
+    <string name="discard_message">Kaydedilmemiş değişikliklerin kaybolacak.</string>
+
+    <!-- Analiz -->
+    <string name="stats_title">Analiz</string>
+    <string name="stats_empty_title">Henüz analiz edilecek veri yok</string>
+    <string name="stats_empty_message">Kategorilere göre harcamalarını görmek için aktif abonelik ekle.</string>
+    <string name="stats_by_category">Kategorilere göre (aylık)</string>
+    <string name="stats_most_expensive">En pahalılar</string>
+    <string name="stats_daily_average">Günlük ortalama</string>
+    <plurals name="stats_paused_note">
+        <item quantity="one">%d duraklatılmış abonelik hesaba katılmadı.</item>
+        <item quantity="other">%d duraklatılmış abonelik hesaba katılmadı.</item>
+    </plurals>
+    <string name="per_month">%1$s/ay</string>
+    <string name="per_year">%1$s/yıl</string>
+    <string name="percent">%%%1$d</string>
+
+    <!-- Ayarlar -->
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_section_notifications">Bildirimler</string>
+    <string name="settings_section_appearance">Görünüm</string>
+    <string name="settings_section_data">Veriler</string>
+    <string name="settings_section_about">Hakkında</string>
+    <string name="settings_reminder_time">Hatırlatma saati</string>
+    <string name="settings_notification_permission">Bildirim izni</string>
+    <string name="status_on">Açık</string>
+    <string name="status_off_tap_to_fix">Kapalı — açmak için dokun</string>
+    <string name="settings_theme">Tema</string>
+    <string name="theme_system">Sistem varsayılanı</string>
+    <string name="theme_light">Açık</string>
+    <string name="theme_dark">Koyu</string>
+    <string name="settings_dynamic_color">Dinamik renkler</string>
+    <string name="settings_dynamic_color_help">Duvar kağıdındaki renkleri kullan</string>
+    <string name="settings_default_currency">Varsayılan para birimi</string>
+    <string name="settings_language">Dil</string>
+    <string name="settings_language_help">Uygulama dilini değiştir</string>
+    <string name="settings_export">Yedekle</string>
+    <string name="settings_export_help">Tüm abonelikleri bir JSON dosyasına kaydet</string>
+    <string name="settings_import">Geri yükle</string>
+    <string name="settings_import_help">Abonelikleri yedek dosyasından yükle</string>
+    <string name="settings_delete_all">Tüm verileri sil</string>
+    <string name="settings_delete_all_help">Bu cihazdaki tüm abonelikleri kaldır</string>
+    <string name="settings_rate">Uygulamayı değerlendir</string>
+    <string name="settings_rate_help">Yorumun bize çok yardımcı olur</string>
+    <string name="settings_privacy">Gizlilik politikası</string>
+    <string name="settings_privacy_help">Verilerin cihazından hiç çıkmaz</string>
+    <string name="settings_version">Sürüm</string>
+    <string name="import_title">Yedeği geri yükle</string>
+    <string name="import_message">Yedekteki abonelikler mevcut listene eklensin mi, yoksa mevcut liste tamamen yedekle değiştirilsin mi?</string>
+    <string name="import_merge">Ekle</string>
+    <string name="import_replace">Değiştir</string>
+    <string name="delete_all_title">Tüm veriler silinsin mi?</string>
+    <string name="delete_all_message">Tüm abonelikler kalıcı olarak silinecek. Önce yedek almanı öneririz.</string>
+    <string name="all_data_deleted">Tüm veriler silindi</string>
+    <plurals name="backup_exported">
+        <item quantity="one">%d abonelik yedeklendi</item>
+        <item quantity="other">%d abonelik yedeklendi</item>
+    </plurals>
+    <plurals name="backup_imported">
+        <item quantity="one">%d abonelik geri yüklendi</item>
+        <item quantity="other">%d abonelik geri yüklendi</item>
+    </plurals>
+    <string name="backup_export_failed">Yedekleme başarısız oldu</string>
+    <string name="backup_import_failed">Dosya okunamadı</string>
+    <string name="backup_invalid">Bu dosya geçerli bir Abonelik Takip yedeği değil</string>
+
+    <!-- Bildirimler -->
+    <string name="notification_channel_name">Ödeme hatırlatmaları</string>
+    <string name="notification_channel_description">Yaklaşan abonelik ödemeleri için hatırlatmalar</string>
+    <string name="notification_title_today">%1$s ödemesi bugün</string>
+    <string name="notification_title_tomorrow">%1$s ödemesi yarın</string>
+    <plurals name="notification_title_days">
+        <item quantity="one">%1$s ödemesine %2$d gün kaldı</item>
+        <item quantity="other">%1$s ödemesine %2$d gün kaldı</item>
+    </plurals>
+    <string name="notification_text">%1$s · %2$s</string>
+</resources>
