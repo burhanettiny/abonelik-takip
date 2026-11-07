@@ -21,7 +21,8 @@ data class AppSettings(
     val reminderHour: Int = 9,
     val reminderMinute: Int = 0,
     val themeMode: ThemeMode = ThemeMode.SYSTEM,
-    val dynamicColor: Boolean = true,
+    /** Varsayılan kapalı: marka renkleri (yeşil) kullanılır; Android 12+'da kullanıcı açabilir. */
+    val dynamicColor: Boolean = false,
     val defaultCurrency: Money = Money.TRY,
     val sortOrder: SortOrder = SortOrder.NEXT_PAYMENT,
 )

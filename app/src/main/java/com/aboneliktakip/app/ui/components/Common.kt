@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.material3.Icon
 import com.aboneliktakip.app.R
 import com.aboneliktakip.app.data.Category
+import com.aboneliktakip.app.ui.theme.ChartColors
 
 @Composable
 fun CategoryAvatar(category: Category, modifier: Modifier = Modifier, size: Dp = 44.dp, dimmed: Boolean = false) {
@@ -30,7 +31,7 @@ fun CategoryAvatar(category: Category, modifier: Modifier = Modifier, size: Dp =
         modifier = modifier
             .size(size)
             .background(
-                if (dimmed) MaterialTheme.colorScheme.surfaceVariant else MaterialTheme.colorScheme.secondaryContainer,
+                ChartColors[category.ordinal % ChartColors.size].copy(alpha = if (dimmed) 0.08f else 0.18f),
                 CircleShape,
             ),
         contentAlignment = Alignment.Center,

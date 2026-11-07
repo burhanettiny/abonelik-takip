@@ -19,7 +19,7 @@ demo enter
 demo clock -e hhmm 0941
 demo battery -e level 100 -e plugged false
 demo network -e wifi show -e level 4
-demo network -e mobile show -e datatype none -e level 4
+demo network -e mobile hide
 demo notifications -e visible false
 
 shot() { # locale theme route name
