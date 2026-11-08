@@ -40,7 +40,7 @@ Uygulamanın teknik bilgileri:
 1. https://play.google.com/console adresine gidin, Google hesabınızla giriş yapın.
 2. Hesap türü: **Kişisel** (şirketiniz yoksa).
 3. 25 $ ücreti ödeyin, kimlik doğrulamasını tamamlayın (kimlik belgesi + telefon doğrulaması istenir; onay birkaç gün sürebilir).
-4. Geliştirici profilinde herkese açık bir **iletişim e-postası** belirleyin (mağazada görünür).
+4. Geliştirici profilinde herkese açık **iletişim e-postası** olarak `mailtoburhanettin@gmail.com` adresini girin (mağazada görünür).
 
 ---
 
@@ -159,7 +159,7 @@ Diğer alanlar:
 |---|---|
 | Uygulama kategorisi | **Finans** |
 | Etiketler | Bütçe, Kişisel finans, Fatura hatırlatıcı (önerilenlerden seçin) |
-| E-posta | Geliştirici iletişim e-postanız |
+| E-posta | `mailtoburhanettin@gmail.com` |
 | Web sitesi | https://burhanettiny.github.io/abonelik-takip/ |
 
 > Ekran görüntülerini yeniden üretmek için: **Actions > Store screenshots > Run workflow**. İş bitince
