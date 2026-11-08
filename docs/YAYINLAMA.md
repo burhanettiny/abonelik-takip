@@ -150,8 +150,22 @@ Tüm metin ve görseller depoda hazırdır:
 | Öne çıkan grafik (1024×500) | `fastlane/metadata/android/tr-TR/images/featureGraphic.png` | |
 | Telefon ekran görüntüleri (2–8 adet) | `fastlane/metadata/android/tr-TR/images/phoneScreenshots/` | |
 
-İngilizce çeviri eklemek için: **Mağaza girişi > Çevirileri yönet > Kendi çevirilerimi ekle > İngilizce (ABD) – en-US**
-ve `en-US` klasöründeki dosyaları kullanın.
+**Çeviriler (9 dil):** **Mağaza girişi > Çevirileri yönet > Kendi çevirilerimi ekle** ile şu dilleri ekleyin ve
+her dil için ilgili klasördeki başlık, kısa/tam açıklama, öne çıkan grafik ve ekran görüntülerini yükleyin:
+
+| Play Console dili | Klasör |
+|---|---|
+| İngilizce (ABD) – en-US | `fastlane/metadata/android/en-US` |
+| Almanca – de-DE | `fastlane/metadata/android/de-DE` |
+| Fransızca – fr-FR | `fastlane/metadata/android/fr-FR` |
+| İspanyolca (İspanya) – es-ES | `fastlane/metadata/android/es-ES` |
+| İtalyanca – it-IT | `fastlane/metadata/android/it-IT` |
+| Portekizce (Brezilya) – pt-BR | `fastlane/metadata/android/pt-BR` |
+| Rusça – ru-RU | `fastlane/metadata/android/ru-RU` |
+| Arapça – ar | `fastlane/metadata/android/ar` |
+
+> İpucu: Play Console'da önce tüm dilleri ekleyip "Kendi çevirilerimi ekle" ekranında dil değiştirerek ilerlemek en hızlısıdır.
+> Bir dil için görsel yüklemezseniz Play varsayılan dilin (tr-TR) görsellerini gösterir.
 
 Diğer alanlar:
 

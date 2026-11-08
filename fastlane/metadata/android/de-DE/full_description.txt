@@ -1,0 +1,28 @@
+Streamingdienste, Musik, Cloud-Speicher, Handy- und Internetvertrag, Miete, Kreditraten, Versicherungen, Fitnessstudio … Den Überblick zu behalten, wann welche Zahlung fällig ist, ist mühsam. Abonelik Takip sammelt alle wiederkehrenden Zahlungen auf einem Bildschirm und erinnert dich vor jeder Fälligkeit.
+
+★ WARUM ABONELIK TAKIP?
+• Auf einen Blick sehen, was du jeden Monat ausgibst
+• Vergessene Abos entdecken und unnötige kündigen
+• Keine Fälligkeit mehr verpassen, keine Mahngebühren
+• Kein Konto, keine Werbung, funktioniert offline – deine Daten bleiben auf deinem Handy
+
+★ FUNKTIONEN
+• Unbegrenzt viele Abos und Rechnungen
+• Wöchentlich, monatlich, alle 3 oder 6 Monate und jährlich
+• Nächstes Zahlungsdatum wird automatisch berechnet (auch Monatsenden korrekt)
+• Benachrichtigung am Tag selbst oder 1, 2, 3 Tage bzw. 1 Woche vorher
+• Erinnerungszeit frei wählbar
+• Monatliche und jährliche Summe sowie Betrag der nächsten 30 Tage
+• Ausgaben nach Kategorie mit Ringdiagramm
+• Teuerste Abos und Tagesdurchschnitt
+• 12 Kategorien wie Video & TV, Musik, Spiele, Cloud & Software, Telefon & Internet, Miete & Wohnen, Kredite & Versicherung
+• 10 Währungen: EUR, CHF, USD, GBP, TRY, RUB, BRL, SAR, AED, AZN
+• Abos pausieren, ohne sie zu löschen
+• Notizen (Tarif, Konto, Karte usw.)
+• Sortieren nach Zahlung, Betrag oder Name; Filter nach Kategorie
+• Sicherung und Wiederherstellung als JSON-Datei
+• Helles und dunkles Design, dynamische Farben ab Android 12
+• 9 Sprachen: Deutsch, Englisch, Französisch, Spanisch, Italienisch, Portugiesisch, Russisch, Arabisch und Türkisch
+
+★ DATENSCHUTZ
+Abonelik Takip erhebt keinerlei personenbezogene Daten. Keine Registrierung, keine Werbung, keine Tracker. Alle Eingaben werden ausschließlich auf deinem Gerät gespeichert und nie an einen Server gesendet.

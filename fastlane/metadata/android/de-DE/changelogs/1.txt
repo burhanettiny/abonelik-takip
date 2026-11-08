@@ -1,0 +1,5 @@
+Erste Version:
+• Abos und Rechnungen verwalten
+• Zahlungserinnerungen
+• Ausgaben nach Kategorie
+• Sicherung und Wiederherstellung

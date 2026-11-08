@@ -45,7 +45,18 @@ object Format {
      * Geçersiz, sıfır veya çok büyük tutarlarda null döner.
      */
     fun parseAmountMinor(input: String): Long? {
-        val t = input.trim().filter { it.isDigit() || it == ',' || it == '.' }
+        // Arapça ondalık (٫) ve binlik (٬) ayırıcılarını da kabul et; rakamları Latin rakamlarına çevir.
+        val t = input.trim()
+            .map { c ->
+                when {
+                    c == '\u066B' -> '.'
+                    c == '\u066C' -> ','
+                    c.isDigit() -> Character.forDigit(Character.digit(c, 10), 10)
+                    else -> c
+                }
+            }
+            .filter { it.isDigit() || it == ',' || it == '.' }
+            .joinToString("")
         if (t.isEmpty() || t.none { it.isDigit() }) return null
         val lastComma = t.lastIndexOf(',')
         val lastDot = t.lastIndexOf('.')
@@ -77,7 +88,8 @@ object Format {
 
     /** Tutarı düzenleme alanına yazılacak hâle getirir: 14999 -> "149,99" (TR) / "149.99" (EN). */
     fun minorToInput(minor: Long, locale: Locale = Locale.getDefault()): String {
-        val sep = DecimalFormatSymbols.getInstance(locale).decimalSeparator
+        // Yalnızca "," veya "." kullan; ayrıştırıcı ikisini de anlar (ör. Arapça ٫ yerine ".").
+        val sep = if (DecimalFormatSymbols.getInstance(locale).decimalSeparator == ',') ',' else '.'
         val whole = minor / 100
         val frac = minor % 100
         return if (frac == 0L) whole.toString() else String.format(Locale.ROOT, "%d%c%02d", whole, sep, frac)

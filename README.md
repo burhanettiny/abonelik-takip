@@ -22,10 +22,10 @@ Tamamen çevrimdışı çalışır: hesap yok, reklam yok, internet izni yok. Ve
 | Özet | Aylık, yıllık, önümüzdeki 30 gün; aktif abonelik sayısı |
 | Analiz | Para birimine göre halka grafik, kategori dağılımı, en pahalı 5, günlük ortalama |
 | Liste | Önümüzdeki 7 gün / 30 gün / Daha sonra / Duraklatılanlar bölümleri; sıralama ve kategori filtresi |
-| Para birimleri | TRY, USD, EUR, GBP (her biri ayrı toplanır) |
+| Para birimleri | TRY, USD, EUR, GBP, CHF, RUB, AZN, SAR, AED, BRL (her biri ayrı toplanır; varsayılan cihaz bölgesine göre) |
 | Veriler | JSON yedekleme / geri yükleme (ekle veya değiştir), tüm verileri silme, Android otomatik yedekleme |
 | Görünüm | Material 3, açık/koyu/sistem teması, Android 12+ dinamik renk, kenardan kenara ekran |
-| Dil | Türkçe ve İngilizce; Android 13+ uygulama başına dil seçimi |
+| Dil | 9 dil: Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Portekizce (BR), Rusça, Arapça (sağdan sola); Android 13+ uygulama başına dil seçimi |
 
 ## Mimari
 
@@ -79,7 +79,7 @@ adb shell am start -n com.aboneliktakip.app.debug/com.aboneliktakip.app.MainActi
 |---|---|---|
 | `android.yml` | Her push / PR | Birim testleri, lint, debug APK, release AAB |
 | `release.yml` | `v*` etiketi | İmzalı AAB + APK, imza doğrulama, GitHub Release |
-| `screenshots.yml` | Elle | Emülatörde TR/EN, açık/koyu mağaza ekran görüntüleri |
+| `screenshots.yml` | Elle | Emülatörde 9 dilde, açık/koyu mağaza ekran görüntüleri + release duman testi |
 
 ## Yayınlama
 

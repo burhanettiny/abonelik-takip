@@ -40,7 +40,8 @@ shot() { # locale theme route name
   echo "ok $OUT/$locale/$name.png"
 }
 
-for locale in tr-TR en-US; do
+# Play Console dil kodlarıyla aynı adlar (fastlane/metadata/android/<kod>)
+for locale in ${LOCALES:-tr-TR en-US de-DE fr-FR es-ES it-IT pt-BR ru-RU ar}; do
   shot "$locale" no  home     1_home
   shot "$locale" no  stats    2_stats
   shot "$locale" no  edit     3_edit

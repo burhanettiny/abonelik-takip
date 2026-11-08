@@ -12,7 +12,7 @@ permissions:
 jobs:
   screenshots:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7
 
@@ -57,9 +57,10 @@ jobs:
 
       - name: Görüntüleri depoya ekle
         run: |
-          for l in tr-TR en-US; do
+          for src in screenshots/*/; do
+            l=$(basename "$src")
             d=fastlane/metadata/android/$l/images/phoneScreenshots
-            mkdir -p "$d" && rm -f "$d"/*.png && cp screenshots/$l/*.png "$d"/
+            mkdir -p "$d" && rm -f "$d"/*.png && cp "$src"*.png "$d"/
           done
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

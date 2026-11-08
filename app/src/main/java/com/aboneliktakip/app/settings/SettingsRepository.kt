@@ -23,7 +23,7 @@ data class AppSettings(
     val themeMode: ThemeMode = ThemeMode.SYSTEM,
     /** Varsayılan kapalı: marka renkleri (yeşil) kullanılır; Android 12+'da kullanıcı açabilir. */
     val dynamicColor: Boolean = false,
-    val defaultCurrency: Money = Money.TRY,
+    val defaultCurrency: Money = Money.defaultFor(java.util.Locale.getDefault()),
     val sortOrder: SortOrder = SortOrder.NEXT_PAYMENT,
 )
 

@@ -1,0 +1,5 @@
+Primera versión:
+• Control de suscripciones y facturas
+• Recordatorios de pago
+• Gasto por categoría
+• Copia de seguridad y restauración

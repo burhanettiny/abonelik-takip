@@ -196,7 +196,7 @@ private fun EditFormContent(
         OutlinedTextField(
             value = form.amountText,
             onValueChange = { v ->
-                onChange { it.copy(amountText = v.filter { c -> c.isDigit() || c == ',' || c == '.' }.take(14)) }
+                onChange { it.copy(amountText = v.filter { c -> c.isDigit() || c in ",.\u066B\u066C" }.take(14)) }
             },
             label = { Text(stringResource(R.string.field_amount)) },
             placeholder = { Text(Format.minorToInput(14999)) },

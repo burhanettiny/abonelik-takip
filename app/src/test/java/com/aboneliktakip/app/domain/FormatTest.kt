@@ -27,6 +27,15 @@ class FormatTest {
         assertEquals(15000L, Format.parseAmountMinor(" 150 "))
     }
 
+    @Test fun parsesArabicInput() {
+        // Arapça-Hint rakamları ve Arapça ondalık ayırıcı (٫)
+        assertEquals(14999L, Format.parseAmountMinor("\u0661\u0664\u0669\u066B\u0669\u0669"))
+        // Arapça binlik ayırıcı (٬)
+        assertEquals(125050L, Format.parseAmountMinor("1\u066C250\u066B50"))
+        val ar = Locale.forLanguageTag("ar-SA")
+        assertEquals(14999L, Format.parseAmountMinor(Format.minorToInput(14999, ar)))
+    }
+
     @Test fun rejectsInvalid() {
         assertNull(Format.parseAmountMinor(""))
         assertNull(Format.parseAmountMinor("0"))

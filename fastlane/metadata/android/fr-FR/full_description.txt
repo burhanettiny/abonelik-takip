@@ -1,0 +1,28 @@
+Streaming, musique, stockage cloud, forfait mobile et box internet, loyer, crédits, assurances, salle de sport… Difficile de savoir quel paiement tombe quand. Abonelik Takip rassemble tous vos paiements récurrents sur un seul écran et vous prévient avant chaque échéance.
+
+★ POURQUOI ABONELIK TAKIP ?
+• Voir d'un coup d'œil combien vous dépensez chaque mois
+• Repérer les abonnements oubliés et résilier ceux qui ne servent plus
+• Ne plus jamais rater une échéance ni payer de frais de retard
+• Sans compte, sans publicité, hors ligne : vos données restent sur votre téléphone
+
+★ FONCTIONNALITÉS
+• Abonnements et factures illimités
+• Périodicité hebdomadaire, mensuelle, trimestrielle, semestrielle ou annuelle
+• Prochaine échéance calculée automatiquement (fins de mois gérées correctement)
+• Notification le jour même ou 1, 2, 3 jours ou 1 semaine avant
+• Heure du rappel personnalisable
+• Total mensuel, total annuel et montant des 30 prochains jours
+• Dépenses par catégorie avec graphique en anneau
+• Abonnements les plus chers et coût moyen par jour
+• 12 catégories : Vidéo & TV, Musique, Jeux, Cloud & Logiciels, Téléphone & Internet, Loyer & Maison, Crédits & Assurances…
+• 10 devises : EUR, CHF, USD, GBP, TRY, RUB, BRL, SAR, AED, AZN
+• Mise en pause d'un abonnement sans le supprimer
+• Notes (formule, compte, carte utilisée…)
+• Tri par échéance, montant ou nom ; filtre par catégorie
+• Sauvegarde et restauration au format JSON
+• Thème clair ou sombre, couleurs dynamiques sur Android 12+
+• 9 langues : français, anglais, allemand, espagnol, italien, portugais, russe, arabe et turc
+
+★ CONFIDENTIALITÉ
+Abonelik Takip ne collecte aucune donnée personnelle. Pas d'inscription, pas de publicité, pas de traceurs. Tout ce que vous saisissez reste sur votre appareil et n'est jamais envoyé à un serveur.

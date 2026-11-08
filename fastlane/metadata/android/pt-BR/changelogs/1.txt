@@ -1,0 +1,5 @@
+Primeira versão:
+• Controle de assinaturas e contas
+• Lembretes de pagamento
+• Gastos por categoria
+• Backup e restauração

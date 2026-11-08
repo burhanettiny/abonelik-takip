@@ -1,0 +1,5 @@
+Prima versione:
+• Gestione di abbonamenti e bollette
+• Promemoria di pagamento
+• Spesa per categoria
+• Backup e ripristino

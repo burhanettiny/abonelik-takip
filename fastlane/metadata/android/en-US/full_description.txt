@@ -16,13 +16,13 @@ Streaming services, music, cloud storage, phone and internet bills, rent, loan i
 • Spending by category with a donut chart
 • Most expensive subscriptions and your daily average cost
 • 12 built-in categories: Video & TV, Music, Games, Cloud & Software, Phone & Internet, Utilities, Rent & Home, Loans & Insurance, Health & Fitness, Education and more
-• TRY, USD, EUR and GBP currencies
+• 10 currencies: USD, EUR, GBP, CHF, TRY, RUB, AZN, SAR, AED, BRL
 • Pause a subscription to exclude it from totals without deleting it
 • Add notes (plan, account, card used, etc.)
 • Sort by next payment, amount or name; filter by category
 • Back up to and restore from a JSON file
 • Light / dark theme and Material You dynamic colors on Android 12+
-• English and Turkish
+• 9 languages: English, Turkish, German, French, Spanish, Italian, Portuguese, Russian and Arabic
 
 ★ PRIVACY
 Abonelik Takip does not collect any personal data. No sign-up, no ads, no trackers. Everything you enter is stored only on your device and is never sent to any server.

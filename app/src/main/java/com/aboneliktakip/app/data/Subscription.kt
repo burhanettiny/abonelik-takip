@@ -15,11 +15,34 @@ enum class BillingCycle(@param:StringRes val labelRes: Int) {
     YEARLY(R.string.cycle_yearly),
 }
 
+/** Desteklenen para birimleri. Yeni birim eklerken sona ekleyin (sıralama ordinal'e göre yapılır). */
 enum class Money(val code: String) {
     TRY("TRY"),
     USD("USD"),
     EUR("EUR"),
     GBP("GBP"),
+    CHF("CHF"),
+    RUB("RUB"),
+    AZN("AZN"),
+    SAR("SAR"),
+    AED("AED"),
+    BRL("BRL"),
+    ;
+
+    companion object {
+        /** Cihaz bölgesinin para birimi destekleniyorsa onu, değilse null döner. */
+        fun fromLocale(locale: java.util.Locale): Money? {
+            val code = try {
+                java.util.Currency.getInstance(locale)?.currencyCode
+            } catch (e: IllegalArgumentException) {
+                null
+            }
+            return entries.firstOrNull { it.code == code }
+        }
+
+        /** İlk açılışta kullanılacak varsayılan para birimi. */
+        fun defaultFor(locale: java.util.Locale): Money = fromLocale(locale) ?: USD
+    }
 }
 
 enum class Category(@param:StringRes val labelRes: Int, val emoji: String) {

@@ -1,0 +1,28 @@
+Streaming, musica, cloud, telefono e internet, affitto, rate di prestiti, assicurazioni, palestra… Ricordare quale pagamento scade e quando non è facile. Abonelik Takip riunisce tutti i pagamenti ricorrenti in un'unica schermata e ti avvisa prima di ogni scadenza.
+
+★ PERCHÉ ABONELIK TAKIP?
+• Vedi a colpo d'occhio quanto spendi ogni mese
+• Scopri gli abbonamenti dimenticati e disdici quelli inutili
+• Non perdere più una scadenza ed evita le more
+• Nessun account, nessuna pubblicità, funziona offline: i dati restano sul tuo telefono
+
+★ FUNZIONI
+• Abbonamenti e bollette illimitati
+• Frequenza settimanale, mensile, trimestrale, semestrale o annuale
+• Prossima scadenza calcolata automaticamente (anche a fine mese)
+• Notifica il giorno stesso o 1, 2, 3 giorni o 1 settimana prima
+• Orario del promemoria personalizzabile
+• Totale mensile, totale annuale e importo dei prossimi 30 giorni
+• Spesa per categoria con grafico ad anello
+• Abbonamenti più costosi e media giornaliera
+• 12 categorie: Video e TV, Musica, Giochi, Cloud e software, Telefono e internet, Affitto e casa, Prestiti e assicurazioni…
+• 10 valute: EUR, CHF, USD, GBP, TRY, RUB, BRL, SAR, AED, AZN
+• Metti in pausa un abbonamento senza eliminarlo
+• Note (piano, account, carta usata…)
+• Ordina per scadenza, importo o nome; filtra per categoria
+• Backup e ripristino in formato JSON
+• Tema chiaro o scuro e colori dinamici su Android 12+
+• 9 lingue: italiano, inglese, tedesco, francese, spagnolo, portoghese, russo, arabo e turco
+
+★ PRIVACY
+Abonelik Takip non raccoglie alcun dato personale. Nessuna registrazione, nessuna pubblicità, nessun tracker. Tutto ciò che inserisci resta sul tuo dispositivo e non viene mai inviato a un server.

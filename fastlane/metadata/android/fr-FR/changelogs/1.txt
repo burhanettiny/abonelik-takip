@@ -1,0 +1,5 @@
+Première version :
+• Suivi des abonnements et factures
+• Rappels de paiement
+• Dépenses par catégorie
+• Sauvegarde et restauration
