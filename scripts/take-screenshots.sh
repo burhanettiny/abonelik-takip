@@ -35,13 +35,15 @@ shot() { # locale theme route name
   sleep 4
   adb shell am broadcast -a android.intent.action.CLOSE_SYSTEM_DIALOGS >/dev/null 2>&1 || true
   sleep 1
-  mkdir -p "$OUT/$locale"
-  adb exec-out screencap -p > "$OUT/$locale/$name.png"
-  echo "ok $OUT/$locale/$name.png"
+  # Play Console Arapça için bölgesiz "ar" kodunu kullanır.
+  local dir=$locale; [ "$locale" = "ar-SA" ] && dir=ar
+  mkdir -p "$OUT/$dir"
+  adb exec-out screencap -p > "$OUT/$dir/$name.png"
+  echo "ok $OUT/$dir/$name.png"
 }
 
 # Play Console dil kodlarıyla aynı adlar (fastlane/metadata/android/<kod>)
-for locale in ${LOCALES:-tr-TR en-US de-DE fr-FR es-ES it-IT pt-BR ru-RU ar}; do
+for locale in ${LOCALES:-tr-TR en-US de-DE fr-FR es-ES it-IT pt-BR ru-RU ar-SA}; do
   shot "$locale" no  home     1_home
   shot "$locale" no  stats    2_stats
   shot "$locale" no  edit     3_edit

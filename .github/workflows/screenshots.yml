@@ -5,6 +5,11 @@ name: Store screenshots + release smoke test
 # ve ayrıca "screenshots" artifact'ı olarak da yüklenir.
 on:
   workflow_dispatch:
+    inputs:
+      locales:
+        description: "Boşlukla ayrılmış diller (boş = hepsi), ör. ar-SA de-DE"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -47,7 +52,7 @@ jobs:
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
           script: |
-            bash scripts/take-screenshots.sh
+            LOCALES="${{ inputs.locales }}" bash scripts/take-screenshots.sh
             bash scripts/smoke-test-release.sh
 
       - uses: actions/upload-artifact@v7
